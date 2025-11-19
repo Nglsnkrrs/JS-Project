@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="inputs">
+            <input type="number"
+                class="input__number"
+                id="input1"
+            >
+            <input type="number"
+                class="input__number"
+                id="input2"
+            >
+        </div>
+        <div class="buttons__operators">
+            <button id="plusBtn">+</button>
+            <button id="minusBtn">-</button>
+            <button id="multiplyBtn">*</button>
+            <button id="divisionBtn">/</button>
+        </div>
+        <div class="buttons__action">
+            <button id="clearAll">CE</button>
+            <button id="clearLasts">C</button>
+        </div>
+        <button id="resultBtn" class="result">Submit</button>
+        <h4>Результат:</h4>
+        <p id="result_label" class="mb-0"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

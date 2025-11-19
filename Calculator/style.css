@@ -1,0 +1,68 @@
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input__number {
+  width: 200px;
+  height: 25px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.buttons__operators{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.buttons__operators button{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(8, 255, 3);
+    border: 1px solid #5dae11;
+    border-radius: 10px;
+}
+.buttons__action{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 5px;
+}
+.buttons__action button{
+    width: 95px;
+    height: 45px;
+}
+.result{
+    width: 200px;
+    height: 45px;
+}
+.buttons__action button, .result{
+    background-color: rgb(232, 54, 54);
+    border: 1px solid #790707;
+    border-radius: 10px;
+}
